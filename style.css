@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #c6ebfd;
+  --secundary-color: #539cd3;
+  --background-color1: #8ccef0;
+  --background-color2: #f0f0f0;
+
+  --font-style1: 'DM Mono', monospace;
+  --font-style2: 'DM Sans', sans-serif;
+
+  font-size: 62.5%; /*1rem = 10px*/
+}
+
+body {
+  font-family: 'DM Mono', monospace;
+  font-family: 'DM Sans', sans-serif;
+
+}
