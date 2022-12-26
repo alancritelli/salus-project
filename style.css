@@ -17,7 +17,6 @@
   --font-style2: 'DM Sans', sans-serif;
 
   font-size: 62.5%; /*1rem = 10px*/
-  --nav-height: 7.2rem;
 }
 
 html {
@@ -31,7 +30,6 @@ body {
 }
 
 body {
-  font-family: var(font-style2);
   font-size: 1.6rem;
 
   overflow: auto;
@@ -43,21 +41,37 @@ img {
 }
 
 .wrapper {
-  max-width: 100%;
-  margin-inline: auto;
+  width: min(92%, 100%);
+  margin-inline: 6.5rem;
   padding-inline: 2.4rem;
+}
+
+.button {
+  background: var(--primary-color);
+  border-radius: 2rem;
+  padding: 1rem 2.4rem;
+
+  transition: background 200ms;
+}
+
+.button a {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* ===== NAVBAR ===== */
 nav {
+  font-family: var(--font-style2);
+  background-color: white;
+
   position: fixed;
   width: 100vw;
 
   z-index: 100;
 
-  margin-top: 1rem;
-
-  box-shadow: 2px 2px 2px #e4e4e4;
+  padding-top: 1rem;
 }
 
 nav .wrapper {
@@ -105,26 +119,52 @@ nav#navigation .menu li a:hover::after {
   width: 100%;
 }
 
-.button {
-  background: var(--primary-color);
-  border-radius: 2rem;
-  padding: 1rem 2.4rem;
-
-  transition: background 200ms;
-}
-
-.button a {
-  color: black;
-  font-size: 1.4rem;
-  font-family: var(--font-style2);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.button:hover {
+nav#navigation .button:hover {
   background-color: var(--secundary-color);
 }
 
 /* ===== HOME ===== */
+#home {
+  padding-top: 15rem;
+
+  background-color: var(--background-color1);
+  font-family: var(--font-style2);
+}
+
+#home .wrapper {
+  display: flex;
+}
+
+#home header {
+  width: 79rem;
+  margin-right: 2rem;
+}
+
+#home header h4 {
+  font-size: 3.2rem;
+}
+
+#home header h1 {
+  font: 300 6.2rem var(--font-style1);
+
+  padding-block: 4rem;
+
+  /*font-size: 5.2rem;
+  font-family: var(--font-style2);
+  font-weight: 300;*/
+}
+
+#home .button {
+  background-color: #fff;
+  width: 50%;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+#home img:nth-child(2) {
+  width: 45.8%;
+}
 
 /* ===== ABOUTUS ===== */
 
