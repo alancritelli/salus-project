@@ -167,9 +167,275 @@ nav#navigation .button:hover {
 }
 
 /* ===== ABOUTUS ===== */
+#aboutus {
+  background-color: var(--background-color2);
+  font-family: var(--font-style1);
+}
+
+#aboutus h4 {
+  padding-top: 9.5rem;
+  font-size: 3.2rem;
+}
+
+#aboutus p {
+  margin-top: 3rem;
+  margin-left: 7rem;
+
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+#aboutus img {
+  margin-top: -15rem;
+}
 
 /* ===== EXPERTS ===== */
+#experts {
+  background-color: var(--background-color1);
+  font-family: var(--font-style1);
+}
 
-/* ===== TESTIMUNIALS ===== */
+#experts .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#experts .image-bg {
+  margin-block: auto;
+}
+
+.cards {
+  margin-top: 6.5rem;
+
+  width: 90%;
+}
+
+.cards h4 {
+  font-size: 2.4rem;
+  text-align: center;
+
+  margin-bottom: 1.2rem;
+}
+
+.card {
+  display: flex;
+  background-color: #fff;
+
+  height: 23rem;
+
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+}
+
+.card .profile-img {
+  border-right: 2px solid #ccc;
+
+  text-align: center;
+}
+
+.card .profile-info {
+  width: 90%;
+
+  margin-left: 2rem;
+}
+
+.card .name {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.card .city {
+  display: flex;
+  justify-content: end;
+
+  color: var(--secundary-color);
+  font-weight: 700;
+
+  margin-bottom: 1rem;
+}
+
+.card .more-info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 1rem;
+}
+
+/* ===== TESTIMONIALS ===== */
+#testimonials {
+  background-color: var(--background-color2);
+  font-family: var(--font-style2);
+}
+
+#testimonials header {
+  font-family: var(--font-style1);
+  text-align: center;
+
+  padding-block: 6rem;
+}
+
+#testimonials h1 {
+  font-size: 3.2rem;
+  margin-bottom: 6rem;
+}
+
+#testimonials h4 {
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+.testimonials-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+
+  padding-bottom: 5rem;
+}
+
+.testimonial-card {
+  background-color: var(--primary-color);
+
+  border-radius: 3rem;
+  box-shadow: 15px 15px var(--secundary-color);
+
+  padding: 2rem;
+}
+
+.text span {
+  font-size: 8rem;
+}
+
+.text p {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+#testimonials cite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 4px dotted #000;
+
+  font-style: normal;
+}
+
+#testimonials cite img {
+  position: relative;
+
+  margin-top: 2rem;
+}
+
+#testimonials cite p {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+#testimonials cite p:nth-child(1) {
+  margin-left: 2rem;
+  font-size: 2.4rem;
+}
 
 /* ===== CONTACTUS ===== */
+#contactus {
+  background-color: var(--background-color1);
+  font-family: var(--font-style1);
+}
+
+#contactus header {
+  text-align: center;
+}
+
+#contactus h1 {
+  font-size: 3.2rem;
+
+  padding-block: 6rem;
+}
+
+#contactus h4 {
+  font-size: 2.4rem;
+  font-weight: 100;
+
+  padding-bottom: 6rem;
+}
+#contactus .content {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-inline: 9rem;
+}
+
+#contactus .download {
+  display: flex;
+}
+
+#contactus .stores p {
+  text-align: center;
+}
+
+#contactus .stores {
+  margin-right: 1.5rem;
+}
+
+#contactus .qrcode {
+  margin-top: 1rem;
+}
+
+#contactus .image-bg {
+  width: 40%;
+}
+
+/* ===== CONTACTUS ===== */
+footer {
+  font-family: var(--font-style2);
+  font-weight: 500;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-block: 1rem;
+
+  align-items: center;
+}
+
+footer .brand {
+  display: flex;
+}
+
+footer .phone,
+footer .location,
+footer .copyright {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+
+footer .phone img,
+footer .location img,
+footer .copyright img {
+  width: 6%;
+}
+
+footer .phone p,
+footer .location p,
+footer .copyright p {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+footer .social a {
+  margin-left: 0.5rem;
+
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
