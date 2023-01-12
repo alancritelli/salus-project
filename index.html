@@ -6,17 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"  href="mobile.css" />
 
     <!--FONTES-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=DM+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+ 
 
     <!--ICONES-->
     <link rel="stylesheet" href="assets/Icons/icomoon/style.css" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">    
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Salus | Sua saúde mental importa</title>
   </head>
@@ -25,28 +51,32 @@
     <nav id="navigation">
       <div class="wrapper">
         <a href="#home">
-          <div class="logo">
-            <img
-              src="assets/img/Logo.png"
-              alt="logo da salus"
-              title="logo salus"
-            />
+            <div class="logo">
+              <img
+                src="assets/img/Logo.png"
+                alt="logo da salus"
+                title="logo salus"
+              />
+            </div>
+          </a>
+          <div class="menu" id="navbar">
+            <ul>
+              <li><a href="#home" class="link">Inicio</a></li>
+              <li><a href="#aboutus" class="link">Sobre</a></li>
+              <li><a href="#experts" class="link">Especialistas</a></li>
+              <li><a href="#testimonials" class="link">Depoimentos</a></li>
+              <li><a href="#contactus" class="link">Fale Conosco</a></li>
+            </ul>
           </div>
-        </a>
-        <div class="menu">
-          <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#aboutus">Sobre</a></li>
-            <li><a href="#experts">Especialistas</a></li>
-            <li><a href="#testimonials">Depoimentos</a></li>
-            <li><a href="#contactus">Fale Conosco</a></li>
-          </ul>
-        </div>
 
-        <div class="button">
-          <a href="">Agende sua Consulta</a>
-        </div>
-      </div>
+          <div class="button agendar-consulta">
+            <a href="">Agende sua Consulta</a>
+          </div>
+
+          <a href="javascript:void(0);" class="icon btn-mobile" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>       
     </nav>
 
     <section id="home">
@@ -118,125 +148,128 @@
 
           <div class="cards">
             <h4>Conheça nossos melhores especialistas</h4>
-            <div class="card">
-              <div class="profile-img">
-                <img
-                  src="assets/img/people01.png"
-                  alt="Foto de perfil da Sarah Barbosa"
-                />
-
-                <img
-                  src="assets/img/Assessmentsppl01.png"
-                  alt="avaliações do atendimento da Sarah Barbosa"
-                />
-              </div>
-
-              <div class="profile-info">
-                <h4 class="name">Sarah Barbosa</h4>
-
-                <p class="city">Sorocaba, São Paulo</p>
-
-                <p class="details">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ligula massa, suscipit vitae felis eu, condimentum commodo
-                  odio.
-                </p>
-
-                <div class="more-info">
-                  <div class="button">
-                    <a href="">Saiba Mais</a>
+            <div class="content-cards">
+              <div class="card">
+                <div class="profile-img">
+                  <img
+                    src="assets/img/people01.png"
+                    alt="Foto de perfil da Sarah Barbosa"
+                  />
+  
+                  <img
+                    src="assets/img/Assessmentsppl01.png"
+                    alt="avaliações do atendimento da Sarah Barbosa"
+                  />
+                </div>
+  
+                <div class="profile-info">
+                  <h4 class="name">Sarah Barbosa</h4>
+  
+                  <p class="city">Sorocaba, São Paulo</p>
+  
+                  <p class="details">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ligula massa, suscipit vitae felis eu, condimentum commodo
+                    odio.
+                  </p>
+  
+                  <div class="more-info">
+                    <div class="button">
+                      <a href="">Saiba Mais</a>
+                    </div>
+  
+                    <div class="value">
+                      <img
+                        src="assets/Icons/001-support-services.png"
+                        alt="icone para suporte ao usuario"
+                      />
+                      R$ 100 / 50 minutos
+                    </div>
                   </div>
-
-                  <div class="value">
-                    <img
-                      src="assets/Icons/001-support-services.png"
-                      alt="icone para suporte ao usuario"
-                    />
-                    R$ 100 / 50 minutos
+                </div>
+              </div>
+  
+              <div class="card">
+                <div class="profile-img">
+                  <img
+                    src="assets/img/people02.png"
+                    alt="Foto de perfil do Miguel Teixeira"
+                  />
+  
+                  <img
+                    src="assets/img/Assessmentsppl02.png"
+                    alt="avaliações do atendimento do Miguel Teixeira"
+                  />
+                </div>
+  
+                <div class="profile-info">
+                  <h4 class="name">Miguel Teixeira</h4>
+  
+                  <p class="city">Votorantim, São Paulo</p>
+  
+                  <p class="details">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ligula massa, suscipit vitae felis eu, condimentum commodo
+                    odio.
+                  </p>
+  
+                  <div class="more-info">
+                    <div class="button">
+                      <a href="">Saiba Mais</a>
+                    </div>
+  
+                    <div class="value">
+                      <img
+                        src="assets/Icons/001-support-services.png"
+                        alt="icone para suporte ao usuario"
+                      />
+                      R$ 90 / 40 minutos
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card">
+                <div class="profile-img">
+                  <img
+                    src="assets/img/people03.png"
+                    alt="Foto de perfil da Camila Martins"
+                  />
+  
+                  <img
+                    src="assets/img/Assessmentsppl03.png"
+                    alt="avaliações do atendimento da Camila Martins"
+                  />
+                </div>
+  
+                <div class="profile-info">
+                  <h4 class="name">Camila Martins</h4>
+  
+                  <p class="city">Sorocaba, São Paulo</p>
+  
+                  <p class="details">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ligula massa, suscipit vitae felis eu, condimentum commodo
+                    odio.
+                  </p>
+  
+                  <div class="more-info">
+                    <div class="button">
+                      <a href="">Saiba Mais</a>
+                    </div>
+  
+                    <div class="value">
+                      <img
+                        src="assets/Icons/001-support-services.png"
+                        alt="icone para suporte ao usuario"
+                      />
+                      R$ 110 / 60 minutos
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="card">
-              <div class="profile-img">
-                <img
-                  src="assets/img/people02.png"
-                  alt="Foto de perfil do Miguel Teixeira"
-                />
-
-                <img
-                  src="assets/img/Assessmentsppl02.png"
-                  alt="avaliações do atendimento do Miguel Teixeira"
-                />
-              </div>
-
-              <div class="profile-info">
-                <h4 class="name">Miguel Teixeira</h4>
-
-                <p class="city">Votorantim, São Paulo</p>
-
-                <p class="details">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ligula massa, suscipit vitae felis eu, condimentum commodo
-                  odio.
-                </p>
-
-                <div class="more-info">
-                  <div class="button">
-                    <a href="">Saiba Mais</a>
-                  </div>
-
-                  <div class="value">
-                    <img
-                      src="assets/Icons/001-support-services.png"
-                      alt="icone para suporte ao usuario"
-                    />
-                    R$ 90 / 40 minutos
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="profile-img">
-                <img
-                  src="assets/img/people03.png"
-                  alt="Foto de perfil da Camila Martins"
-                />
-
-                <img
-                  src="assets/img/Assessmentsppl03.png"
-                  alt="avaliações do atendimento da Camila Martins"
-                />
-              </div>
-
-              <div class="profile-info">
-                <h4 class="name">Camila Martins</h4>
-
-                <p class="city">Sorocaba, São Paulo</p>
-
-                <p class="details">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ligula massa, suscipit vitae felis eu, condimentum commodo
-                  odio.
-                </p>
-
-                <div class="more-info">
-                  <div class="button">
-                    <a href="">Saiba Mais</a>
-                  </div>
-
-                  <div class="value">
-                    <img
-                      src="assets/Icons/001-support-services.png"
-                      alt="icone para suporte ao usuario"
-                    />
-                    R$ 110 / 60 minutos
-                  </div>
-                </div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </section>
@@ -252,7 +285,132 @@
           </h4>
         </header>
 
-        <div class="testimonials-cards">
+        <!-- Carousel  -->
+        <div class="owl-carousel owl-theme testimonial-salus">
+          <div class="item">
+            <div class="testimonial-card">
+              <blockquote>
+                <div class="text">
+                  <p>
+                    <span>&ldquo;</span>
+                    A depressão é uma doença bem silenciosa e às vezes, se você
+                    não tem pessoas ao se redor que te amem e que tenham uma
+                    atenção especial por você, ela só vai te definhando.
+                  </p>
+  
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                    et justo magna. Integer sit amet commodo augue. Duis eget
+                    purus gravida, interdum nibh a, convallis lacus. Pellentesque
+                    habitant morbi tristique.
+                  </p>
+                </div>
+  
+                <cite>
+                  <img src="assets/img/people04.png" alt="" />
+                  <div class="infos">
+                    <p>Yago da Rosa</p>
+                    <p>31 anos</p>
+                    <p>Usuario desde 2020</p>
+                  </div>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-card">
+              <blockquote>
+                <div class="text">
+                  <p>
+                    <span>&ldquo;</span>
+                    Só quem vive essa realidade de ter sua vida mudada de uma hora
+                    pra outra sabe...
+                  </p>
+  
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                    et justo magna. Integer sit amet commodo augue. Duis eget
+                    purus gravida, interdum nibh a, convallis lacus. Pellentesque
+                    habitant morbi tristique.
+                  </p>
+                </div>
+  
+                <cite>
+                  <img src="assets/img/people05.png" alt="" />
+                  <div class="infos">
+                    <p>Sophia Monteiro</p>
+                    <p>31 anos</p>
+                    <p>Usuario desde 2020</p>
+                  </div>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-card">
+              <blockquote>
+                <div class="text">
+                  <p>
+                    <span>&ldquo;</span>
+                    Coloquei na minha cabeça que eu vou tentar recomeçar, cuidando
+                    de mim da minha parte exterior e falando com um ser superior.
+                  </p>
+  
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                    et justo magna. Integer sit amet commodo augue. Duis eget
+                    purus gravida, interdum nibh a, convallis lacus. Pellentesque
+                    habitant morbi tristique.
+                  </p>
+                </div>
+  
+                <cite>
+                  <img src="assets/img/people06.png" alt="" />
+                  <div class="infos">
+                    <p>Maria Luiza Rodrigues</p>
+                    <p>31 anos</p>
+                    <p>Usuario desde 2020</p>
+                  </div>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-card">
+              <blockquote>
+                <div class="text">
+                  <p>
+                    <span>&ldquo;</span>
+                    Coloquei na minha cabeça que eu vou tentar recomeçar, cuidando
+                    de mim da minha parte exterior e falando com um ser superior.
+                  </p>
+  
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                    et justo magna. Integer sit amet commodo augue. Duis eget
+                    purus gravida, interdum nibh a, convallis lacus. Pellentesque
+                    habitant morbi tristique.
+                  </p>
+                </div>
+  
+                <cite>
+                  <img src="assets/img/people06.png" alt="" />
+                  <div class="infos">
+                    <p>Maria Luiza Rodrigues</p>
+                    <p>31 anos</p>
+                    <p>Usuario desde 2020</p>
+                  </div>
+                </cite>
+              </blockquote>
+            </div>
+          </div>          
+        </div>
+
+        <!-- Carousel  /Fim-->
+
+        
+
+        <!-- <div class="testimonials-cards">
           <div class="testimonial-card">
             <blockquote>
               <div class="text">
@@ -365,7 +523,7 @@
               </cite>
             </blockquote>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -421,10 +579,10 @@
               <p>R. José Herrera Higuera - Votorantim - SP</p>
             </div>
 
-            <div class="copyright">
+            <!-- <div class="copyright">
               <img src="assets/Icons/005-copyright.png" alt="" />
               <p>2022 Salus. All rights reserved</p>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -442,11 +600,28 @@
           </a>
         </div>
       </div>
+      <div class="copyright">       
+        <p> <strong>&copy; 2022 Salus Tecnologia. All rights reserved</strong><span>Versão 1.0.3</span></p>
+      </div>
+      <div class="overflow link"></div>
     </footer>
 
     <a id="backToTopButton" href="#home"><i class="icon-chevrons-up"></i> </a>
 
+    <!-- OWL Carousel-->    
+
+
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    
+  
+
+    <!-- javascript -->
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
+    
+
+    
   </body>
 </html>

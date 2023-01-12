@@ -68,3 +68,38 @@ scrollReveal.reveal(
   `,
   { interval: 100 }
 )
+
+$(document).ready(function() {
+  var owl = $('.testimonial-salus');
+  owl.owlCarousel({    
+    nav: true,
+    items:1,
+    loop:true,
+    margin:10,    
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true
+  });
+  $('.play').on('click',function(){
+      owl.trigger('play.owl.autoplay',[1000])
+  })
+  $('.stop').on('click',function(){
+      owl.trigger('stop.owl.autoplay')
+  })
+})
+
+// function myFunction() {
+//   var element = document.getElementById("navbar");
+//   element.classList.toggle("show");
+// }
+
+$(".btn-mobile").click(function(){
+  $(".menu ").toggleClass("show");
+  $(".overflow").toggleClass("show");
+
+});
+
+$('.link').click(function(){
+  $(".menu").removeClass("show"); 
+  $(".overflow").removeClass("show");
+});

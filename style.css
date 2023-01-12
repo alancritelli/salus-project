@@ -12,6 +12,7 @@
   --secundary-color: #539cd3;
   --background-color1: #8ccef0;
   --background-color2: #f0f0f0;
+  --background-color3: #333333;
 
   --font-style1: 'DM Mono', monospace;
   --font-style2: 'DM Sans', sans-serif;
@@ -44,14 +45,17 @@ img {
   width: min(92%, 100%);
   margin-inline: 6.5rem;
   padding-inline: 2.4rem;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .button {
   background: var(--primary-color);
   border-radius: 2rem;
   padding: 1rem 2.4rem;
-
   transition: background 200ms;
+  cursor: pointer;
 }
 
 .button a {
@@ -59,6 +63,11 @@ img {
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+.button a:hover,
+.button:hover,
+.button:hover a{
+  color: #fff;
 }
 
 /* ===== NAVBAR ===== */
@@ -92,6 +101,7 @@ nav#navigation .menu ul {
 nav#navigation .menu ul li a {
   color: black;
   opacity: 0.7;
+  font-size: 1.1em;
 }
 
 nav#navigation .menu li a {
@@ -129,10 +139,17 @@ nav#navigation .button:hover {
 
   background-color: var(--background-color1);
   font-family: var(--font-style2);
+  height: 90vh;
+  overflow: hidden;
+  
 }
 
 #home .wrapper {
   display: flex;
+}
+
+#home .wrapper .content{
+  padding-top: 10rem;
 }
 
 #home header {
@@ -156,15 +173,28 @@ nav#navigation .button:hover {
 
 #home .button {
   background-color: #fff;
+  border: 1px solid #fff;
   width: 50%;
   text-align: center;
-
   margin: 0 auto;
 }
-
+#home .button a:hover,
+#home .button:hover,
+#home .button:hover a{
+  transition: 0.5 ease-in-out;
+  background: var(--primary-color);
+  color: #333333;
+  border-color: #f5f5f5;
+}
 #home img:nth-child(2) {
   width: 45.8%;
 }
+
+section{
+  height: 100vh;
+  overflow: hidden;
+}
+
 
 /* ===== ABOUTUS ===== */
 #aboutus {
@@ -173,7 +203,8 @@ nav#navigation .button:hover {
 }
 
 #aboutus h4 {
-  padding-top: 9.5rem;
+  /* padding-top: 9.5rem; */
+  padding-top: 12rem;
   font-size: 3.2rem;
 }
 
@@ -186,7 +217,9 @@ nav#navigation .button:hover {
 }
 
 #aboutus img {
-  margin-top: -15rem;
+  /* margin-top: -15rem; */
+  display: block;
+  margin: 0 auto;  
 }
 
 /* ===== EXPERTS ===== */
@@ -202,13 +235,17 @@ nav#navigation .button:hover {
 
 #experts .image-bg {
   margin-block: auto;
+  padding-top: 0rem;
 }
 
-.cards {
-  margin-top: 6.5rem;
-
+#experts .cards{
+  padding-top: 13rem;
   width: 90%;
 }
+/* .cards {
+  margin-top: 6.5rem;
+  width: 90%;
+} */
 
 .cards h4 {
   font-size: 2.4rem;
@@ -270,9 +307,8 @@ nav#navigation .button:hover {
 
 #testimonials header {
   font-family: var(--font-style1);
-  text-align: center;
-
-  padding-block: 6rem;
+  text-align: center; 
+  padding-top: 14rem;
 }
 
 #testimonials h1 {
@@ -337,6 +373,22 @@ nav#navigation .button:hover {
   font-size: 2.4rem;
 }
 
+
+.testimonial-salus{
+  max-width: 980px;
+  margin: 5rem auto 0;
+}
+
+.testimonial-salus.owl-carousel .owl-item{
+  padding: 0 5rem;
+  display: flex;
+}
+.testimonial-salus.owl-carousel  .owl-item img {
+  width: auto;
+}
+.testimonial-salus.owl-carousel .owl-stage-outer{
+  padding-bottom: 5rem;
+}
 /* ===== CONTACTUS ===== */
 #contactus {
   background-color: var(--background-color1);
@@ -345,6 +397,7 @@ nav#navigation .button:hover {
 
 #contactus header {
   text-align: center;
+  padding-top: 5em;
 }
 
 #contactus h1 {
@@ -392,6 +445,7 @@ nav#navigation .button:hover {
 footer {
   font-family: var(--font-style2);
   font-weight: 500;
+ 
 }
 
 footer .wrapper {
@@ -428,7 +482,27 @@ footer .copyright p {
   margin-left: 1rem;
   font-size: 1.4rem;
 }
-
+footer .copyright{
+  width: 100%;
+  display: inline-block;
+  background-color: var(--background-color3);
+  margin: 0;
+  border: 0;
+  padding: 2rem;
+  text-align: center;
+}
+footer .copyright p{
+  color: #fff;
+  
+}
+footer .copyright p strong{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+footer .copyright p span{
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+}
 footer .social a {
   margin-left: 0.5rem;
 
